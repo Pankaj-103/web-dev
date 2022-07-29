@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+       
+        h1{
+            font-family: 'Hahmlet', serif;
+            
+            color: #f162ff;
+        }
+        #head{
+            background-color: #320d3e;
+        }
+
+        #click{
+            font-family: 'Inconsolata', monospace;
+            
+        }
+        li{
+            font-family: 'Patrick Hand', cursive;
+        }
+        #text{
+            background-color: #320d3e;
+            color: #ffd79d;
+        }
+      body{
+          background-color: #e1dd72;
+      }
+     footer{
+
+        background-color: #f57e7e;
+        width: 100%;
+        color: #031163;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 6px;
+        font-family: 'Black And White Picture', sans-serif;
+        font-size: 20px;
+        
+
+
+     }
+        
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+      <div class="container-fluid  d-flex justify-content-center" id="head">
+    
+        <h1>Your daily laughter</h1>
+        </div>
+        
+      
+        <div id='text' class="container-fluid d-flex  justify-content-center ">
+            <ul id="jokes"></ul>
+        </div>  
+        <div class="container-fluid d-flex justify-content-center mt-4"> 
+            <button type="button" class="btn btn-success mt-0" id="click">Make me laugh:)</button>
+        </div> 
+
+     
+
+      
+
+   <footer class="position-fixed">
+       <div>Stay young Stay happy</div>
+ <img src="/27.Async_JS/2x/outline_sentiment_very_satisfied_black_24dp.png" alt="">
+   </footer>
+    <script src="dadjoke.js"></script>
+</body>
+</html>

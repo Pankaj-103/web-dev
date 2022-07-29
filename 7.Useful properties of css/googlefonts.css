@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+   
+}
+p{
+    font-family: Pangolin, cursive;
+    color: white;
+}
+h1{
+    font-family: 'Mate SC', serif;
+    color: white;
+}
+section{
+
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+
+}
+
+    

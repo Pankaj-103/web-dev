@@ -1,0 +1,14 @@
+section div{
+    width: 20px ;
+    height:50px;
+    margin: 20px 0px 0px 0px;
+    
+    display: block;
+    background-color:coral;
+}
+  section:hover:nth-of-type(n){
+    margin: 100px 0px 0px 500px;
+    border-radius: 5mm;
+    transition: 4s;
+
+}

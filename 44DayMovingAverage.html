@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #5cdb95;
+        color: #05386b;
+    }
+    #stock{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    #btn{
+        padding: 10px;
+        font-size: 1.45rem;
+        margin-top: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    #btn:hover{
+        background-color: #379683;
+    }
+    h1{
+        color: #edf5e1;
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+</style>
+<body>
+
+    <h1>44 Days Moving Average</h1>
+     <div id="stock">
+    <label for="entry">ENTRY:</label>
+    <input type="number" id="entry" name="entry" style="height:30px;font-size: 1rem;width: 100px;"><br>
+    <label for="stopLoss">STOP LOSS:</label>
+    <input type="number" id="stopLoss" name="stopLoss" style="height: 30px;font-size: 1rem;width: 100px;"> <br>
+   <label for="risk">Risk:</label>
+   <input type="number" id="risk" name="risk" style="height: 30px;font-size: 1rem;width: 100px;" ><br>
+    <button id="btn" type="button" onclick="calcfunc()">Compute</button>
+
+    </div>
+
+
+</body>
+<script>
+  
+  
+ 
+ function calcfunc(){
+     let entry= document.getElementById("entry").value;
+     let stopLoss=document.getElementById("stopLoss").value;
+     let risk=document.getElementById("risk").value;
+    let stock=document.getElementById("stock");
+     let diff,qty,tgt;
+      
+     diff=entry-stopLoss;
+     qty=risk/diff;
+     tgt=2*diff+Number(entry);
+
+     
+     let difference=document.createElement("h3");
+     difference.innerHTML=`Difference b/w T&SL: ${diff}`;
+     stock.appendChild(difference);
+
+     
+     let quantity=document.createElement("h3");
+     quantity.innerHTML=`Quantity: ${qty}`;
+     stock.appendChild(quantity);
+     
+     
+     let target=document.createElement("h3");
+     target.innerHTML=`Target: ${tgt}`;
+     stock.appendChild(target);
+}
+
+
+
+
+</script>
+</html>
